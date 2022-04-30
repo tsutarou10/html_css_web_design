@@ -1,0 +1,55 @@
+<table border="1">
+  <tr>
+    <th>属性</th>
+    <th>用途</th>
+  </tr>
+  <tr>
+    <td>action</td>
+    <td>データの送信ページを指定</td>
+  </tr>
+  <tr>
+    <td>method</td>
+    <td>データの転送方法の指定。主にget or post を入力</td>
+  </tr>
+  <tr>
+    <td>name</td>
+    <td>フォームの名前を指定</td>
+  </tr>
+</table>
+<form action="example.php" method="post" name="contact-form">
+  ここにフォームの部品が入ります<br>
+  名前: <input type="text"> <br>
+  名前(default): <input type="text" placeholder="default name"> <br>
+  search: <input type="search"> <br>
+  email: <input type="email"> <br>
+  tel: <input type="tel"> <br>
+  url: <input type="url"> <br>
+
+  <input type="radio" name="gender" value="男">男
+  <input type="radio" name="gender" value="女" checked>女
+  <input type="radio" name="gender" value="その他">その他
+  <br>
+
+  好きな色:
+  <input type="checkbox" name="color" value="red" checked> red
+  <input type="checkbox" name="color" value="blue" > blue
+  <input type="checkbox" name="color" value="yellow" > yellow
+  <input type="checkbox" name="color" value="green" > green
+  <br>
+
+  <input type="submit" value="送信する">
+  <!--<input type="image" src="../images/sakura.jpg" alt="送信する">-->
+  <br>
+
+  <select name="bloodtype">
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="O">O</option>
+    <option value="AB">AB</option>
+    <option value="不明" selected>不明</option>
+  </select>
+  <br>
+
+  <textarea name="message" placeholder="メッセージを入力">メッセージを入力</textarea>
+
+</form>
