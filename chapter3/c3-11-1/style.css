@@ -1,0 +1,21 @@
+p {
+  border-bottom: 2px solid #0bd
+}
+
+div {
+  /* border-width: 1px 4px 8px 12px;*/ /* 上 -> 右 -> 下 -> 左 */
+  border: 5px dotted tomato
+}
+
+li {
+  background-color: red;
+}
+ul {
+  list-style-type: square;
+  list-style-position: outside;
+}
+
+ol {
+  list-style-type: lower-latin;
+  list-style-position: inside;
+}

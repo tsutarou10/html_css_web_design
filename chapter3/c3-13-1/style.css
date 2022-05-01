@@ -1,0 +1,12 @@
+@charset
+p {
+  color: #999;
+}
+
+p.blue {
+  color: #0bd;
+}
+
+#orange {
+  color: #fa2;
+}
