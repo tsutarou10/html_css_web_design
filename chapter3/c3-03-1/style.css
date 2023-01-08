@@ -1,4 +1,18 @@
 @charset "UTF-8";
+/*
+* セレクタ {
+*   プロパティ: 値;
+* }
+* セレクタ: タグ名、クラス、ID を指定
+*/
+
+/*
+* 複数の装飾を指定する
+* h1, p {
+*   color: red;
+*   font-size: 20px;
+* }
+*/
 body {
   background-color: #98fb98;
 }
@@ -11,6 +25,9 @@ p {
   font-size: 20px;
 }
 
+/*
+ * 要素の中の要素に指定する
+*/
 div p {
   color: red;
 }

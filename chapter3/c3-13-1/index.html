@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8">
-    <title>hoge</title>
-    <meta name="description" content="hoge">
-    <link rel="stylesheet" href="style.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <title>クラスとIDを使った指定方法</title>
+  <meta name="description" content="クラスとIDを使った指定方法">
+  <link rel="stylesheet" href="style.css">
+</head>
 
-  <body>
-    <h1 class="blue">.blueのついたh1タグ</h1>
-    <p>クラスを指定しない場合は灰色でテキスト表示</p>
-    <p class="blue">クラスを指定した場合は青色でテキスト表示</p>
-    <p id="orange">IDを指定した場合はオレンジ色でテキスト表示</p>
-  </body>
+<body>
+  <p>クラスを指定しない場合は灰色でテキストを表示</p>
+  <p class="blue">クラスを指定した部分は青でテキストを表示</p>
+  <div class="blue">クラスを指定した部分は青でテキストを表示</div>
+  <p id="orange" class="blue">IDを指定した場合はオレンジでテキストを表示 (idが優先)</p>
+</body>
 
 </html>

@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/*
+ * margin: 要素から他の要素までの距離 (要素の外側の余白)
+   * margin: 四辺すべて
+   * margin: 上下 左右
+   * margin: 上 左右 下
+   * margin: 上 右 下 左
+ * padding: 要素のフチから中身（コンテンツ）までの距離 (要素の内側の余白）
+ * border: margin と padding の間の枠線
+*/
+div {
+  background: #0bd;
+  margin: 30px;
+  padding: 30px;
+}

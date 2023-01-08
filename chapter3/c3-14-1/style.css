@@ -1,11 +1,21 @@
-.container {
+@charset "utf-8";
+
+/*
+ * Flexコンテナ: Flexboxレイアウトの親要素に当たる部分
+*/
+.container{
+  background: red;
   display: flex;
   flex-wrap: wrap;
-  align-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  height: 300px;
+  align-content: space-around;
+  height: 100vh;
+  /* flex-direction: column; 子要素をどの方向に配置していくかを指定*/
 }
-
+/*
+ * Flexアイテム: Flexboxレイアウトの子要素に当たる部分
+*/
 .item {
   background: #0bd;
   color: #fff;

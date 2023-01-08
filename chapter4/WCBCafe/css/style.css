@@ -1,12 +1,14 @@
-@charset "UTF-8";
+@charset "utf-8";
 
-/* 共通部分 */
+/* ------------------
+  * 共通部分
+---------------------*/
 html {
   font-size: 100%;
 }
 
 body {
-  font-family: "Yu Gothic Medium", "游ゴシック Medium", "YuGothic", "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
   line-height: 1.7;
   color: #432;
 }
@@ -19,7 +21,9 @@ img {
   max-width: 100%;
 }
 
-/* header */
+/* ------------------
+  * HEADER
+---------------------*/
 .logo {
   width: 210px;
   margin-top: 14px;
@@ -38,9 +42,10 @@ img {
 }
 
 .main-nav a {
-  color #432;
+  color: #432;
 }
 
+/* リンクテキストにカーソルを合わせた時に適用される擬似クラス */
 .main-nav a:hover {
   color: #0bd;
 }
@@ -56,10 +61,25 @@ img {
   padding: 0 4%;
 }
 
-/* HOME */
+/* ------------------
+  * HOME
+---------------------*/
+#home {
+  background-image: url(../images/main-bg.jpg);
+  /* background-image: url(../images/main-bg.jpg), linear-gradient(#c9ffbf, #ffafbd); */
+  /* background-image: linear-gradient(#c9ffbf, #ffafbd); */
+  min-height: 100vh;
+  /* background-color: #0bd; */
+  /* background-blend-mode: luminosity; */
+}
+
+#home .page-title {
+  text-transform: none;
+}
+
 .home-content {
   text-align: center;
-  margin-top: 10%
+  margin-top: 10px;
 }
 
 .home-content p {
@@ -91,15 +111,5 @@ img {
 /* 大きな背景画像 */
 .big-bg {
   background-size: cover;
-  background-position: top;
-}
-
-#home {
-  background-image: url(../images/main-bg.jpg), linear-gradient(#c9ffbf, #ffafbd);
-  background-blend-mode: luminosity;
-  min-height: 100vh;
-}
-
-#home .page-title {
-  text-transform: none;
+  background-position: center top;
 }

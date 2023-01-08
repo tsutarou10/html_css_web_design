@@ -1,12 +1,17 @@
-@charset
+@charset "utf-8";
+
 p {
   color: #999;
 }
 
 p.blue {
+  color: #13f;
+}
+
+.blue {
   color: #0bd;
 }
 
 #orange {
-  color: #fa2;
+  color: orange;
 }

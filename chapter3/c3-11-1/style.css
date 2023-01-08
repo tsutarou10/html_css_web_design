@@ -1,21 +1,21 @@
+@charset "utf-8";
+
 p {
-  border-bottom: 2px solid #0bd
+  margin: 30px;
+  border-width: thick;
+  border-style: solid;
 }
 
 div {
-  /* border-width: 1px 4px 8px 12px;*/ /* 上 -> 右 -> 下 -> 左 */
-  border: 5px dotted tomato
+  margin: 30px;
+  border-width: 1px 4px 8px 12px;
+  border-style: dotted;
+  border-color: tomato;
 }
 
-li {
-  background-color: red;
-}
-ul {
-  list-style-type: square;
-  list-style-position: outside;
-}
-
-ol {
-  list-style-type: lower-latin;
-  list-style-position: inside;
+div.border-style {
+  margin: 30px;
+  border-width: 4px;
+  border-style: double dotted solid ridge;
+  border-color: tan #0bd tomato #000;
 }
