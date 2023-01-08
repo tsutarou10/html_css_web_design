@@ -1,55 +1,78 @@
-<table border="1">
-  <tr>
-    <th>属性</th>
-    <th>用途</th>
-  </tr>
-  <tr>
-    <td>action</td>
-    <td>データの送信ページを指定</td>
-  </tr>
-  <tr>
-    <td>method</td>
-    <td>データの転送方法の指定。主にget or post を入力</td>
-  </tr>
-  <tr>
-    <td>name</td>
-    <td>フォームの名前を指定</td>
-  </tr>
-</table>
-<form action="example.php" method="post" name="contact-form">
-  ここにフォームの部品が入ります<br>
-  名前: <input type="text"> <br>
-  名前(default): <input type="text" placeholder="default name"> <br>
-  search: <input type="search"> <br>
-  email: <input type="email"> <br>
-  tel: <input type="tel"> <br>
-  url: <input type="url"> <br>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="フォームを作ろう">
+  <title>フォームを作ろう</title>
+</head>
+<body>
+  <h1>フォームを作ろう</h1>
+  <h2>主な属性</h2>
+  <table border="1">
+    <tr>
+      <th>属性</th>
+      <th>用途</th>
+    </tr>
+    <tr>
+      <td>action</td>
+      <td>データの送信先ページを指定</td>
+    </tr>
+    <tr>
+      <td>method</td>
+      <td>データの転送方法の指定</td>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>データの送信先ページを指定</td>
+    </tr>
+  </table>
 
-  <input type="radio" name="gender" value="男">男
-  <input type="radio" name="gender" value="女" checked>女
-  <input type="radio" name="gender" value="その他">その他
-  <br>
+  <h2>フォームを作る</h2>
+  <form action="example.php" method="post" name="contact-form">
+    <p>名前: <input type="text" placeholder="名字 名前" aria-label="名前入力欄"></input></p>
+    <p>検索: <input type="search" aria-label="検索入力欄"></p>
+    <p>メールアドレス: <input type="email" aria-label="メールアドレス入力欄"></p>
+    <p>電話番号: <input type="tel" aria-label="電話番号入力欄"></p>
+    <p>url: <input type="url" aria-label="url入力欄"></p>
+    <p>複数行入力欄: <textarea name="message" aria-label="複数行入力欄" placeholder="メッセージを入力"></textarea></p>
+    <input type="submit" aria-label="送信" value="送信する">
+  </form>
 
-  好きな色:
-  <input type="checkbox" name="color" value="red" checked> red
-  <input type="checkbox" name="color" value="blue" > blue
-  <input type="checkbox" name="color" value="yellow" > yellow
-  <input type="checkbox" name="color" value="green" > green
-  <br>
+  <h2>ラジオボタンを作る</h2>
+  <form action="example.php" method="post" name="radio-button">
+    <p>
+      性別:
+      <input type="radio" name="gender" value="男" aria-label="male">男
+      <input type="radio" name="gender" value="女" aria-label="female" checked>女
+      <input type="radio" name="gender" value="その他" aria-label="other">その他
+    </p>
+    <input type="submit" aria-label="送信" value="送信する">
+  </form>
 
-  <input type="submit" value="送信する">
-  <!--<input type="image" src="../images/sakura.jpg" alt="送信する">-->
-  <br>
+  <h2>チェックボックスを作る</h2>
+  <form action="example.php" method="post" name="check-box">
+    <p>
+      好きな色:
+      <input type="checkbox" name="color" value="赤" checked aria-label="red"> 赤
+      <input type="checkbox" name="color" value="青" aria-label="blue"> 青
+      <input type="checkbox" name="color" value="黄" aria-label="yellow"> 黄
+      <input type="checkbox" name="color" value="緑" aria-label="green"> 緑
+    </p>
+    <input type="submit" aria-label="送信" value="送信する">
+  </form>
 
-  <select name="bloodtype">
-    <option value="A">A</option>
-    <option value="B">B</option>
-    <option value="O">O</option>
-    <option value="AB">AB</option>
-    <option value="不明" selected>不明</option>
-  </select>
-  <br>
-
-  <textarea name="message" placeholder="メッセージを入力">メッセージを入力</textarea>
-
-</form>
+  <h2>セレクトボックスを作る</h2>
+  <form action="example.php" method="post" name="select-box">
+    <p>
+      血液型:
+      <select name="blood-type" aria-label="血液型セレクトボックス">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="O">O</option>
+        <option value="AB">AB</option>
+      </select>
+    </p>
+    <input type="submit" aria-label="送信" value="送信する">
+  </form>
+</body>
+</html>

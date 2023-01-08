@@ -1,7 +1,20 @@
-今すぐ<a href="https://google.co.jp">Google</a>で検索!
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="リンクを貼ろう">
+  <title>リンクを貼ろう</title>
+</head>
+<body>
+  <!-- aria-label属性は、ラベルが付けられない要素に、スクリーンリーダーなどの支援技術に伝えるためのラベルをつけることができます。これがない頃は、ラベルを画像に示したボタンについて、そのラベルを支援技術に伝えるには画像のalt属性を用いるという方法になってしまっていましたが、今はaria-labelを用いる方が適切だと思います。
+  ラベルが付いている要素にaria-labelをつけると、ラベルは読み上げられなくなり、aria-labelの値のみ読み上げられるようになります。-->
+  <p>今すぐ<a href="https://google.co.jp" aria-label="google">Google</a>で検索!</p>
+  <p><a href="mailto:info@example.com" aria-label="お問い合わせ">お問い合わせ</a></p>
+  <p>
+    <a href="https://google.co.jp" aria-label="google へリンク">
+      <img src="../images/sakura.jpg" alt="美しい桜">
+    </a>
+  </p>
 
-<a href="https://google.co.jp">
-  <img src="../images/sakura.jpg" alt="美しい桜">
-</a>
-
-<a href ="mailto:info@example.com">お問合せ</a>
+</body>
+</html>
